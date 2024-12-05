@@ -11,7 +11,9 @@
         <p>This is a single default.aspx deployment.</p>
         <p>
             Site Name:
-            <%= Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME") ?? "Not Running in Azure App Service" %>
+            <%= Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME") ?? "Not Running in Azure App Service" %> <br />
+                Log Level:
+                <%= Environment.GetEnvironmentVariable("INSPECTOR_LOG_LEVEL") ?? "Not set" %>
         </p>
 
     </body>
